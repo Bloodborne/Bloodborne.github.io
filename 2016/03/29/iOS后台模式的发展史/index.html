@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>iOS后台模式的发展史 | Wryan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="以下内容来自度娘  
+
+第一代iPhone 除了支持Google Earth和Youtube外这两个第三方APP外，还不支持第三方APP，随后第二代iPhone 3G发布时，苹果发布了iPhone OS 2.0系统，提供了APP Store应用软件商店，此时可以安装第三方软件了，这时第三方软件获取消息的方式为无后台仅推送。iPhone OS 3.0则为开发者提供了更多的API（应用程序接口），可让">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS后台模式的发展史">
+<meta property="og:url" content="http://yoursite.com/2016/03/29/iOS后台模式的发展史/index.html">
+<meta property="og:site_name" content="Wryan">
+<meta property="og:description" content="以下内容来自度娘  
+
+第一代iPhone 除了支持Google Earth和Youtube外这两个第三方APP外，还不支持第三方APP，随后第二代iPhone 3G发布时，苹果发布了iPhone OS 2.0系统，提供了APP Store应用软件商店，此时可以安装第三方软件了，这时第三方软件获取消息的方式为无后台仅推送。iPhone OS 3.0则为开发者提供了更多的API（应用程序接口），可让">
+<meta property="og:image" content="http://imgsrc.baidu.com/forum/w%3D580/sign=76f5eaddc1cec3fd8b3ea77de689d4b6/2dec3a30e924b89966e66e296c061d950b7bf619.jpg">
+<meta property="og:image" content="http://imgsrc.baidu.com/forum/w%3D580/sign=181be1efc1fdfc03e578e3b0e43e87a9/1ae4cc24b899a9019cef4c271f950a7b0308f519.jpg">
+<meta property="og:updated_time" content="2016-03-29T15:40:33.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="iOS后台模式的发展史">
+<meta name="twitter:description" content="以下内容来自度娘  
+
+第一代iPhone 除了支持Google Earth和Youtube外这两个第三方APP外，还不支持第三方APP，随后第二代iPhone 3G发布时，苹果发布了iPhone OS 2.0系统，提供了APP Store应用软件商店，此时可以安装第三方软件了，这时第三方软件获取消息的方式为无后台仅推送。iPhone OS 3.0则为开发者提供了更多的API（应用程序接口），可让">
+  
+    <link rel="alternative" href="/atom.xml" title="Wryan" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://lohas.nicoseiga.jp/thumb/893823i?" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">WayYoung</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">I am the one who codes!</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>標籤</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>關於</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">Home</a></li>
+				        
+							<li><a href="/archives">Archives</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/Bloodborne" title="github">github</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Interview/" style="font-size: 20px;">Interview</a> <a href="/tags/iOS/" style="font-size: 10px;">iOS</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://www.google.com/">G</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">哦列哇刚大木！</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">WayYoung</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://lohas.nicoseiga.jp/thumb/893823i?" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">WayYoung</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">I am the one who codes!</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">Home</a></li>
+		        
+					<li><a href="/archives">Archives</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/Bloodborne" title="github">github</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-iOS后台模式的发展史" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/29/iOS后台模式的发展史/" class="article-date">
+  	<time datetime="2016-03-29T15:27:31.000Z" itemprop="datePublished">2016-03-29</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      iOS后台模式的发展史
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Interview/">Interview</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>以下内容来自度娘  </p>
+<blockquote>
+<p>第一代iPhone 除了支持Google Earth和Youtube外这两个第三方APP外，还不支持第三方APP，随后第二代iPhone 3G发布时，苹果发布了iPhone OS 2.0系统，提供了APP Store应用软件商店，此时可以安装第三方软件了，这时第三方软件获取消息的方式为无后台仅推送。iPhone OS 3.0则为开发者提供了更多的API（应用程序接口），可让开发者开发功能更强的应用程序，但此时的iPhone OS还不支持第三方软件常驻后台，而且软件越来越多，从一个软件切换到另一个软件也麻烦。所以苹果推出了iOS 4.0（iPhone OS 正式更名iOS），实现第三方程序常驻后台，支持第三方软件墓碑式(假后台)，只为方便切换，这也是让广大喷子喷到今天的 “第三方软件假后台”！  </p>
+<p>既iOS 4带来了第三方软件假后台后，iOS 5又多了2种第三方软件后台模式，达到了4种。<br>1、无后台仅推送（iPhone OS 1.0/ iPhone OS 2.0/ iPhone OS 3.0）<br>2、墓碑式(假后台)(iOS 4.0)<br>3、智能调度后台(定时启动更新，像新闻APPS，更新完数据就进入墓碑式)(iOS 5.0/iOS 5.0+)<br>4、真后台(iOS 5.0/iOS 5.0+)  </p>
+<p>到今天，iOS 支持的第三方软件后台调用的API有这些：<br>1、Background Audio，这是后台的音频，很早之前便有，也是iOS设备中用得最多的后台应用，调用这个接口可以实现后台的音乐播放。<br>2、Location Services，这是后台的定位，系统会拥有统一页面进行管理。<br>3、VoIP，后台语音服务，类似Skype通话应用需要调用，可进行后台的语音通话。<br>4、Newsstand，报刊杂志后台自动下载更新，其能够自动实时更新。<br>5、Background Task Completion，这个接口早在iOS 4时候便拥有，其可以供任意类型的APP使用，不过在旧系统中，这个接口的后台限制运行时间仅为10分钟，意味着当应用退至后台，其后台运行仅能持续10分钟便会转至休眠状态。iOS 7中对这个接口作出了改变，原来的为连续10分钟，即不论你这10分钟内用户是否关闭屏幕进入休眠状态，应用仍然会在后台等待10分钟完结后推出。  </p>
+<ol>
+<li>Remote Notification(IOS7)，以往聊天类应用接受推送后点进去需要再收一次信息，这情况在QQ、微信等应用上最为明显。不过拥有了这个接口后，这情况将不复存在，以后推送将能够直接启动后台任务。值得注意的是remote notification支持silent notification（静默推送），这样dropbox这类同步应用可以在后台以最节能的模式实时静默同步了，类似布卡漫画这种也可以推送正在追的漫画的新章节并在后台静默下载，待到下载好再给用户发送一个本地推送，用户点开即看无需再联网。  </li>
+<li>Background Transfer Service，后台上传下载。iOS最接近传统多任务的后台接口，可供任意类型的app调用，无时间限制。应用场景包括后台上传和下载数据，这使得游戏后台更新数据包，后台上传视频等等都成为可能，但是正如其名字，它只能用于处理上传下载这种传输类的任务，类似后台剪切板监控这种它就无能为力了。  </li>
+</ol>
+</blockquote>
+<hr>
+<blockquote>
+<p>ios7前的一般程序多任务处理：<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=76f5eaddc1cec3fd8b3ea77de689d4b6/2dec3a30e924b89966e66e296c061d950b7bf619.jpg" alt="beforeiOS7"><br>可以看到，应用其实有十分钟后台的权利<br>除此之外还有两种所谓的伪后台，一种是系统推送机制，另一种是墓碑式后台（在关闭程序时保存现场，下次启动时还原，给人一种后台的假象）<br>ios7之后（一个app可以混合调用多种模式）：<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=181be1efc1fdfc03e578e3b0e43e87a9/1ae4cc24b899a9019cef4c271f950a7b0308f519.jpg" alt="afteriOS7"><br><br><br>Background Audio，VoIP属于不后台会死的类型；Location Services是地点服务，系统统一管理；Newsstand是苹果自家应用，定时更新。这些都是早就有，没变化。<br><br><br>Background Task Completion<br>ios4中开始加入的限时后台，允许应用连续后台十分钟，ios7改为允许在开屏下运行十分钟，关屏会暂停，直到开屏后重启继续凑足十分种。<br><br><br>Background Fetch<br>ios7新增，在系统认为合适的时候激活应用，具体什么时候合适，开发者不可知，使用者不可控，由系统智能判断，适合获取及时性不强的信息<br>这个智能体现在系统会根据用户启动应用的频率和时间以及当前的网络和电量情况来分配每个应用的获取频率和时间，数据刷新是统一的，即系统可以在一个进程内获取多个应用所需的数据而不是一个应用一个进程（类似统一的推送机制，都是为了省电）<br>统一刷新这方面有点类似小米说的对齐唤醒和Deep Sleep Battery Saver，不同应用后台唤醒时刻不同会导致cpu无法进入deep sleep，某些Android用户会发现自己的手机一夜掉电超多，其实就是某些糟糕的app让cpu没睡好：-）<br><br><br>Remote Notification<br>ios7新增，由统一推送通知激活后台，支持silent notification，适合实时类强的应用，有频率限制（每小时几次）<br><br><br>Background Transfer Service<br>ios7新增，可以由应用直接激活的无限制后台，权限大，但是只限于下载上传类服务，只会在 WiFi 环境下才进行传输<br>需要特别注意的是：应用被Background Fetch、Remote Notification、Background Transfer Service三类唤醒时，只被给予几秒钟时间来处理更新。  </p>
+</blockquote>
+<p>总结一下：iOS从来都是有限制的后台，iOS7开放了部分机制。说真假后台毫无意义，必须具体问题具体讨论。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/03/29/真后台vs假后台/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">真后台vs假后台</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="iOS后台模式的发展史" data-title="iOS后台模式的发展史" data-url="http://yoursite.com/2016/03/29/iOS后台模式的发展史/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"bloodborne"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 WayYoung
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
