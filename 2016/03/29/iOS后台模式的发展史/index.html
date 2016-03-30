@@ -18,7 +18,8 @@
 第一代iPhone 除了支持Google Earth和Youtube外这两个第三方APP外，还不支持第三方APP，随后第二代iPhone 3G发布时，苹果发布了iPhone OS 2.0系统，提供了APP Store应用软件商店，此时可以安装第三方软件了，这时第三方软件获取消息的方式为无后台仅推送。iPhone OS 3.0则为开发者提供了更多的API（应用程序接口），可让">
 <meta property="og:image" content="http://7xq2i8.com1.z0.glb.clouddn.com/beforeiOS7.jpg">
 <meta property="og:image" content="http://7xq2i8.com1.z0.glb.clouddn.com/afteriOS7.jpg">
-<meta property="og:updated_time" content="2016-03-29T15:55:36.000Z">
+<meta property="og:image" content="http://7xq2i8.com1.z0.glb.clouddn.com/ApplicationStates.png">
+<meta property="og:updated_time" content="2016-03-30T03:20:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS后台模式的发展史">
 <meta name="twitter:description" content="以下内容来自度娘  
@@ -250,7 +251,7 @@
 <p>ios7前的一般程序多任务处理：<br><img src="http://7xq2i8.com1.z0.glb.clouddn.com/beforeiOS7.jpg" alt="beforeiOS7"><br>可以看到，应用其实有十分钟后台的权利<br>除此之外还有两种所谓的伪后台，一种是系统推送机制，另一种是墓碑式后台（在关闭程序时保存现场，下次启动时还原，给人一种后台的假象）<br>ios7之后（一个app可以混合调用多种模式）：<br><img src="http://7xq2i8.com1.z0.glb.clouddn.com/afteriOS7.jpg" alt="afteriOS7">  </p>
 <p>Background Audio，VoIP属于不后台会死的类型；Location Services是地点服务，系统统一管理；Newsstand是苹果自家应用，定时更新。这些都是早就有，没变化。<br><br><br>Background Task Completion<br>ios4中开始加入的限时后台，允许应用连续后台十分钟，ios7改为允许在开屏下运行十分钟，关屏会暂停，直到开屏后重启继续凑足十分种。<br><br><br>Background Fetch<br>ios7新增，在系统认为合适的时候激活应用，具体什么时候合适，开发者不可知，使用者不可控，由系统智能判断，适合获取及时性不强的信息<br>这个智能体现在系统会根据用户启动应用的频率和时间以及当前的网络和电量情况来分配每个应用的获取频率和时间，数据刷新是统一的，即系统可以在一个进程内获取多个应用所需的数据而不是一个应用一个进程（类似统一的推送机制，都是为了省电）<br>统一刷新这方面有点类似小米说的对齐唤醒和Deep Sleep Battery Saver，不同应用后台唤醒时刻不同会导致cpu无法进入deep sleep，某些Android用户会发现自己的手机一夜掉电超多，其实就是某些糟糕的app让cpu没睡好：-）<br><br><br>Remote Notification<br>ios7新增，由统一推送通知激活后台，支持silent notification，适合实时类强的应用，有频率限制（每小时几次）<br><br><br>Background Transfer Service<br>ios7新增，可以由应用直接激活的无限制后台，权限大，但是只限于下载上传类服务，只会在 WiFi 环境下才进行传输<br>需要特别注意的是：应用被Background Fetch、Remote Notification、Background Transfer Service三类唤醒时，只被给予几秒钟时间来处理更新。  </p>
 </blockquote>
-<p>总结一下：iOS从来都是有限制的后台，iOS7开放了部分机制。说真假后台毫无意义，必须具体问题具体讨论。</p>
+<p>总结一下：iOS从来都是有限制的后台，iOS7开放了部分机制。说真假后台毫无意义，必须具体问题具体讨论。<br><br><br>update:应用状态图表<br><img src="http://7xq2i8.com1.z0.glb.clouddn.com/ApplicationStates.png" alt="Application states"></p>
 
       
     </div>
