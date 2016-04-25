@@ -4,30 +4,18 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>真后台vs假后台 | Wryan</title>
+  <title>UICollectionViewCell在iOS7下size不正确的原因 | Wryan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在quora上查到这么一个问题
-What are the differences between Android and iOS in multitasking?  
-其中一个回答:
-
-The multitasking implementation on Android allows any program to run in the background, for as long as it w">
+  <meta name="description" content="&amp;emsp;&amp;emsp;本来标题是想起“工作一周总结”的，后来想了想，好像也没干什么特别的。by the way，本来这篇东西应该是在上周末写的，但是回了学校参加毕业论文答辩，忙（懒）成狗，因此拖到现在……&amp;emsp;&amp;emsp;工作没有想象中的那么忙，只是做一些demo练习。令我感到意外的是，我好像真的要成为一位搬砖的oO…&amp;emsp;&amp;emsp;言归正传，当使用iOS8或以上的SDK创建好UI">
 <meta property="og:type" content="article">
-<meta property="og:title" content="真后台vs假后台">
-<meta property="og:url" content="http://yoursite.com/2016/03/29/真后台vs假后台/index.html">
+<meta property="og:title" content="UICollectionViewCell在iOS7下size不正确的原因">
+<meta property="og:url" content="http://yoursite.com/2016/04/25/UICollectionViewCell在iOS7下size不正确的原因/index.html">
 <meta property="og:site_name" content="Wryan">
-<meta property="og:description" content="在quora上查到这么一个问题
-What are the differences between Android and iOS in multitasking?  
-其中一个回答:
-
-The multitasking implementation on Android allows any program to run in the background, for as long as it w">
-<meta property="og:updated_time" content="2016-03-29T15:26:49.000Z">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;本来标题是想起“工作一周总结”的，后来想了想，好像也没干什么特别的。by the way，本来这篇东西应该是在上周末写的，但是回了学校参加毕业论文答辩，忙（懒）成狗，因此拖到现在……&amp;emsp;&amp;emsp;工作没有想象中的那么忙，只是做一些demo练习。令我感到意外的是，我好像真的要成为一位搬砖的oO…&amp;emsp;&amp;emsp;言归正传，当使用iOS8或以上的SDK创建好UI">
+<meta property="og:updated_time" content="2016-04-25T14:11:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="真后台vs假后台">
-<meta name="twitter:description" content="在quora上查到这么一个问题
-What are the differences between Android and iOS in multitasking?  
-其中一个回答:
-
-The multitasking implementation on Android allows any program to run in the background, for as long as it w">
+<meta name="twitter:title" content="UICollectionViewCell在iOS7下size不正确的原因">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;本来标题是想起“工作一周总结”的，后来想了想，好像也没干什么特别的。by the way，本来这篇东西应该是在上周末写的，但是回了学校参加毕业论文答辩，忙（懒）成狗，因此拖到现在……&amp;emsp;&amp;emsp;工作没有想象中的那么忙，只是做一些demo练习。令我感到意外的是，我好像真的要成为一位搬砖的oO…&amp;emsp;&amp;emsp;言归正传，当使用iOS8或以上的SDK创建好UI">
   
     <link rel="alternative" href="/atom.xml" title="Wryan" type="application/atom+xml">
   
@@ -191,11 +179,11 @@ The multitasking implementation on Android allows any program to run in the back
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-真后台vs假后台" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-UICollectionViewCell在iOS7下size不正确的原因" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/29/真后台vs假后台/" class="article-date">
-  	<time datetime="2016-03-29T15:25:12.000Z" itemprop="datePublished">2016-03-29</time>
+      <a href="/2016/04/25/UICollectionViewCell在iOS7下size不正确的原因/" class="article-date">
+  	<time datetime="2016-04-25T13:46:42.000Z" itemprop="datePublished">2016-04-25</time>
 </a>
     </div>
   
@@ -208,7 +196,7 @@ The multitasking implementation on Android allows any program to run in the back
         
   
     <h1 class="article-title" itemprop="name">
-      真后台vs假后台
+      UICollectionViewCell在iOS7下size不正确的原因
     </h1>
   
 
@@ -217,7 +205,7 @@ The multitasking implementation on Android allows any program to run in the back
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Interview/">Interview</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工作/">工作</a></li></ul>
 	</div>
 
         
@@ -228,19 +216,12 @@ The multitasking implementation on Android allows any program to run in the back
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在quora上查到这么一个问题</p>
-<p><a href="/What are the differences between Android and iOS in multitasking?">What are the differences between Android and iOS in multitasking?</a>  </p>
-<p>其中一个回答:</p>
+        <p>&emsp;&emsp;本来标题是想起“工作一周总结”的，后来想了想，好像也没干什么特别的。by the way，本来这篇东西应该是在上周末写的，但是回了学校参加毕业论文答辩，忙（懒）成狗，因此拖到现在……<br>&emsp;&emsp;工作没有想象中的那么忙，只是做一些demo练习。令我感到意外的是，我好像真的要成为一位搬砖的oO…<br>&emsp;&emsp;言归正传，当使用iOS8或以上的SDK创建好UICollectionViewCell，在iOS7上运行时cell的size就会变得非常奇葩。原因是:</p>
 <blockquote>
-<p>The multitasking implementation on Android allows any program to run in the background, for as long as it wants.  An application can run as a service, completely in the background.  An application can run at startup, on a schedule, based on events, or continue running after started by the user.  While running in the background, an Android app can do anything it has been given permission to do.</p>
-<p>iOS does not allow true multitasking for third party apps.  iOS only allows certain APIs to run in the background, such as audio streaming and push notifications.  An app stops running the instant the user switches to another app.  Apple gives their own apps multitasking abilities that other apps are not allowed to use, which can cause confusion on this topic.</p>
-<p>iOS’ strict control of multitasking this has a couple of benefits.  First, battery life is greatly improved, because apps aren’t running in the background, and because app creators often have to run functionality in a server and utilize push notifications from that server for functionality that might have been easier to implement in the mobile app.  Secondly, interactive user interfaces are never impacted by apps running in the background, leading to the superior smoothness of iOS.</p>
+<p>In iOS 7, cells’ content views sized themselves via autoresizing masks. In iOS 8, this was changed, cells stopped using the autoresizing masks and started sizing the content view in layoutSubviews. If a nib is encoded in iOS 8 and then decode it on iOS 7, you’ll have a content view without an autoresizing mask and no other means by which to size itself. So if you ever change the frame of the cell, the content view won’t follow.</p>
+<p>Apps being deploying back to iOS 7 will have to work around this by sizing the content view itself, adding autoresizing masks, or adding constraints.  </p>
 </blockquote>
-<p>安卓是真后台，所有程序都能在后台运行任意长的时间，做任何事情。<br>iOS没有真正允许第三方的app进行多任务，只允许特定的api在后台运行，例如音频流和推送通知。用户从一个app切换到另外一个app的时候，之前的那个app会马上停止运行。iOS这样严格控制多任务的好处有：  </p>
-<ol>
-<li>极大提高电池寿命，因为apps没有在后台一直运行;  </li>
-<li>UI交互不会受到在后台运行的apps的影响，因此系统如丝滑般顺畅。  </li>
-</ol>
+<p>&emsp;&emsp;在iOS7,cell 的 content view 通过 autoresizing masks 确定自己的尺寸。但是在 iOS8 ，却是在 layoutSubviews 中。因此就导致了悲剧的发生…<br>&emsp;&emsp;解决方案为在cell中重写:<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-(<span class="keyword">void</span>)awakeFromNib</span><br><span class="line">&#123;</span><br><span class="line">   [<span class="keyword">super</span> awakeFromNib];</span><br><span class="line">   <span class="keyword">self</span><span class="variable">.contentView</span><span class="variable">.frame</span> = <span class="keyword">self</span><span class="variable">.bounds</span>;</span><br><span class="line">   <span class="keyword">self</span><span class="variable">.contentView</span><span class="variable">.autoresizingMask</span> = <span class="built_in">UIViewAutoresizingFlexibleWidth</span> | <span class="built_in">UIViewAutoresizingFlexibleHeight</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -250,18 +231,9 @@ The multitasking implementation on Android allows any program to run in the back
     
 <nav id="article-nav">
   
-    <a href="/2016/03/29/iOS后台模式的发展史/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          iOS后台模式的发展史
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/03/29/面试时被问到的问题/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">面试时被问到的问题</div>
+    <a href="/2016/03/29/iOS后台模式的发展史/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">iOS后台模式的发展史</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -277,7 +249,7 @@ The multitasking implementation on Android allows any program to run in the back
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="真后台vs假后台" data-title="真后台vs假后台" data-url="http://yoursite.com/2016/03/29/真后台vs假后台/"></div>
+	<div class="ds-thread" data-thread-key="UICollectionViewCell在iOS7下size不正确的原因" data-title="UICollectionViewCell在iOS7下size不正确的原因" data-url="http://yoursite.com/2016/04/25/UICollectionViewCell在iOS7下size不正确的原因/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
