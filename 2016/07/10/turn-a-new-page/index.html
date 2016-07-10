@@ -4,19 +4,29 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>隐藏UITabBarController子Controller的TabBar | Wryan</title>
+  <title>萌新异闻录 | Wryan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;emsp;&amp;emsp;以为直接在SB中勾上”hide bottom bar on push”就能隐藏tab bar…的确是能隐藏，但是仍然是placeHolder占据了空间…&amp;emsp;&amp;emsp;花费了一段时间，才发觉是autoLayout的约束设置不正确.在 http://stackoverflow.com/questions/28724255/auto-layout-and-hide-bo">
+  <meta name="description" content="&amp;emsp;&amp;emsp;最近一直在loop 沙龙和黄金时代（釗峰版），有感而发想写些东西记录一下平凡而又不平凡的六月…  
+
+端午节基友集结大作战。可惜蒙牛星没有空…一大早直奔零式家打血缘！这是第二次摸ps4手柄(不算手柄V)，第一次是在前一个星期，组长邀请我到他家打黑魂3！我的抖M之魂熊熊燃烧着~在一群老司机的招待下，作为乘客我感到相当的满足，so awesome~ 因此晚上吃完饭不好意思说出我">
 <meta property="og:type" content="article">
-<meta property="og:title" content="隐藏UITabBarController子Controller的TabBar">
-<meta property="og:url" content="http://yoursite.com/2016/01/27/隐藏UITabBarController子Controller的TabBar/index.html">
+<meta property="og:title" content="萌新异闻录">
+<meta property="og:url" content="http://yoursite.com/2016/07/10/turn-a-new-page/index.html">
 <meta property="og:site_name" content="Wryan">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;以为直接在SB中勾上”hide bottom bar on push”就能隐藏tab bar…的确是能隐藏，但是仍然是placeHolder占据了空间…&amp;emsp;&amp;emsp;花费了一段时间，才发觉是autoLayout的约束设置不正确.在 http://stackoverflow.com/questions/28724255/auto-layout-and-hide-bo">
-<meta property="og:image" content="http://7xq2i8.com1.z0.glb.clouddn.com/Blog1.png">
-<meta property="og:updated_time" content="2016-01-27T08:09:53.000Z">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;最近一直在loop 沙龙和黄金时代（釗峰版），有感而发想写些东西记录一下平凡而又不平凡的六月…  
+
+端午节基友集结大作战。可惜蒙牛星没有空…一大早直奔零式家打血缘！这是第二次摸ps4手柄(不算手柄V)，第一次是在前一个星期，组长邀请我到他家打黑魂3！我的抖M之魂熊熊燃烧着~在一群老司机的招待下，作为乘客我感到相当的满足，so awesome~ 因此晚上吃完饭不好意思说出我">
+<meta property="og:image" content="http://7xq2i8.com1.z0.glb.clouddn.com/2016_06_thumb_IMG_0415_1024.jpg">
+<meta property="og:image" content="http://7xq2i8.com1.z0.glb.clouddn.com/2016_06_thumb_IMG_0428_1024.jpg">
+<meta property="og:image" content="http://7xq2i8.com1.z0.glb.clouddn.com/2016_06_SteamBuy1.png">
+<meta property="og:image" content="http://7xq2i8.com1.z0.glb.clouddn.com/2016_06_SteamBuy2.png">
+<meta property="og:image" content="http://7xq2i8.com1.z0.glb.clouddn.com/2016_06_SteamBuy3.png">
+<meta property="og:updated_time" content="2016-07-10T06:58:35.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="隐藏UITabBarController子Controller的TabBar">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;以为直接在SB中勾上”hide bottom bar on push”就能隐藏tab bar…的确是能隐藏，但是仍然是placeHolder占据了空间…&amp;emsp;&amp;emsp;花费了一段时间，才发觉是autoLayout的约束设置不正确.在 http://stackoverflow.com/questions/28724255/auto-layout-and-hide-bo">
+<meta name="twitter:title" content="萌新异闻录">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;最近一直在loop 沙龙和黄金时代（釗峰版），有感而发想写些东西记录一下平凡而又不平凡的六月…  
+
+端午节基友集结大作战。可惜蒙牛星没有空…一大早直奔零式家打血缘！这是第二次摸ps4手柄(不算手柄V)，第一次是在前一个星期，组长邀请我到他家打黑魂3！我的抖M之魂熊熊燃烧着~在一群老司机的招待下，作为乘客我感到相当的满足，so awesome~ 因此晚上吃完饭不好意思说出我">
   
     <link rel="alternative" href="/atom.xml" title="Wryan" type="application/atom+xml">
   
@@ -180,11 +190,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-隐藏UITabBarController子Controller的TabBar" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-turn-a-new-page" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/01/27/隐藏UITabBarController子Controller的TabBar/" class="article-date">
-  	<time datetime="2016-01-27T07:55:40.000Z" itemprop="datePublished">2016-01-27</time>
+      <a href="/2016/07/10/turn-a-new-page/" class="article-date">
+  	<time datetime="2016-07-10T04:11:22.000Z" itemprop="datePublished">2016-07-10</time>
 </a>
     </div>
   
@@ -197,7 +207,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      隐藏UITabBarController子Controller的TabBar
+      萌新异闻录
     </h1>
   
 
@@ -206,7 +216,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Life/">Life</a></li></ul>
 	</div>
 
         
@@ -217,7 +227,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&emsp;&emsp;以为直接在SB中勾上”hide bottom bar on push”就能隐藏tab bar…的确是能隐藏，但是仍然是placeHolder占据了空间…<br>&emsp;&emsp;花费了一段时间，才发觉是autoLayout的约束设置不正确.在 <a href="http://stackoverflow.com/questions/28724255/auto-layout-and-hide-bottom-bar-when-pushed" target="_blank" rel="external">http://stackoverflow.com/questions/28724255/auto-layout-and-hide-bottom-bar-when-pushed</a> 找到了正确的设置方式.<br>&emsp;&emsp;还有一个大坑!”hide bottom bar on push”要和”under bottom bars”搭配食用！<br><img src="http://7xq2i8.com1.z0.glb.clouddn.com/Blog1.png" alt="坑"></p>
+        <p>&emsp;&emsp;最近一直在loop 沙龙和黄金时代（釗峰版），有感而发想写些东西记录一下平凡而又不平凡的六月…  </p>
+<ul>
+<li><p>端午节基友集结大作战。可惜蒙牛星没有空…一大早直奔零式家打血缘！这是第二次摸ps4手柄(不算手柄V)，第一次是在前一个星期，组长邀请我到他家打黑魂3！<br><img src="http://7xq2i8.com1.z0.glb.clouddn.com/2016_06_thumb_IMG_0415_1024.jpg" alt="DS3"><br>我的抖M之魂熊熊燃烧着~在一群老司机的招待下，作为乘客我感到相当的满足，so awesome~ 因此晚上吃完饭不好意思说出我要回家(回家最晚一班车在七点半)…晚饭后继续回到零式家happy~有玩屁股先锋的，也有玩4公主的，而我当然是血战bloodborne。血缘虐我千百遍，我待血缘如初恋…经过一个多小时的鏖战，终于击败第一个boss神父了…得知我无法赶上最后一班车，老司机零式邀请我在他家过夜。第二次在零式家过夜，好基友，一被子~<br><img src="http://7xq2i8.com1.z0.glb.clouddn.com/2016_06_thumb_IMG_0428_1024.jpg" alt=""></p>
+</li>
+<li><p>省内游。感觉玩得没有太尽兴，虽然本来就没有抱什么期待…时隔多年再次拾起乒乓球拍，回忆起童年时和细佬每个周末大战300回合的时光…然而当晚还没热够身就去泡温泉去了。总算试过泡温泉的感觉了…一段时间之内不会再想泡了，实在太无聊= =这两天逛了个森林公园，田野绿世界和宝晶宫溶洞，并不感觉累，反而长时间的车程让人疲倦…</p>
+</li>
+<li>省内游结束的第二天回学校领取毕业证和清宿舍…无法与舍友同学道别始终有点遗憾…四年时光，不知不觉，逝水流年…不知下一次相聚是什么时候，在什么场合…</li>
+<li>Steam夏季促销。还是管不住这手，别说话，买了再说…<br><img src="http://7xq2i8.com1.z0.glb.clouddn.com/2016_06_SteamBuy1.png" alt="steam1"><br><img src="http://7xq2i8.com1.z0.glb.clouddn.com/2016_06_SteamBuy2.png" alt="steam2"><br><img src="http://7xq2i8.com1.z0.glb.clouddn.com/2016_06_SteamBuy3.png" alt="steam3"><br>讲道理300块能买这么多游戏，简直是超值。不过前几天说要发售巫师3年度版，现在想想当时买的时候还是有点冲动的，因为电脑跑不起…</li>
+<li>年轻人的第一个项目。维护一个经过3个人接手过的项目，而我是第四手…在该项目将要上线之际，希望不会遇到太大问题…</li>
+</ul>
 
       
     </div>
@@ -227,18 +246,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/03/29/面试时被问到的问题/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          面试时被问到的问题
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/01/16/为Label中的关键字添加链接/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">为Label中的关键字添加链接</div>
+    <a href="/2016/05/16/Life-is-Strange/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Life is Strange</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -254,7 +264,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="隐藏UITabBarController子Controller的TabBar" data-title="隐藏UITabBarController子Controller的TabBar" data-url="http://yoursite.com/2016/01/27/隐藏UITabBarController子Controller的TabBar/"></div>
+	<div class="ds-thread" data-thread-key="turn-a-new-page" data-title="萌新异闻录" data-url="http://yoursite.com/2016/07/10/turn-a-new-page/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
