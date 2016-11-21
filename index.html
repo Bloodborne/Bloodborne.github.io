@@ -110,7 +110,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Interview/" style="font-size: 20px;">Interview</a> <a href="/tags/Life/" style="font-size: 15px;">Life</a> <a href="/tags/iOS/" style="font-size: 15px;">iOS</a> <a href="/tags/工作/" style="font-size: 10px;">工作</a>
+						<a href="/tags/Interview/" style="font-size: 20px;">Interview</a> <a href="/tags/Life/" style="font-size: 20px;">Life</a> <a href="/tags/iOS/" style="font-size: 20px;">iOS</a> <a href="/tags/工作/" style="font-size: 10px;">工作</a>
 					</div>
 				</section>
 				
@@ -179,6 +179,124 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-UIImage的内存泄露" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/11/21/UIImage的内存泄露/" class="article-date">
+  	<time datetime="2016-11-21T13:29:06.000Z" itemprop="datePublished">2016-11-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/21/UIImage的内存泄露/">UIImage的内存泄露</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>之前写了一个简单UIImageView测试，发现UIImageView所在的ViewController被 push,pop 了几次之后，内存有增无减，应该是内存泄露了。在dealloc里手动将UIImage设nil、或添加了@autoreleasePool还是不起效。最终还是要拜托google…</p>
+<blockquote>
+<p><a href="http://stackoverflow.com/questions/19437285/uiimage-imagenamed-memory-leak" target="_blank" rel="external">http://stackoverflow.com/questions/19437285/uiimage-imagenamed-memory-leak</a>  </p>
+</blockquote>
+<p><code>[UIImage imageNamed:]</code>初始化的图片会有缓存，由操作系统管理。若有大量的图片，应该使用<code>[UIImage imageWithContentsOfFile:]</code> or <code>[UIImage imageWithData:]</code></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-kira想要平静的生活" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/31/kira想要平静的生活/" class="article-date">
+  	<time datetime="2016-08-31T13:38:54.000Z" itemprop="datePublished">2016-08-31</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/31/kira想要平静的生活/">kira想要平静的生活</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>明天就是九月份了…过去这几周感觉像条咸鱼一样，有点闲。心里有很多想法，不过也只是想想而已，最终还是被惰性占据了身心。to be continued…</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Life/">Life</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-turn-a-new-page" class="article article-type-post" itemscope itemprop="blogPost">
   
