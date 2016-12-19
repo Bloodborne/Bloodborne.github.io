@@ -110,7 +110,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Interview/" style="font-size: 20px;">Interview</a> <a href="/tags/Life/" style="font-size: 20px;">Life</a> <a href="/tags/development/" style="font-size: 10px;">development</a> <a href="/tags/iOS/" style="font-size: 20px;">iOS</a> <a href="/tags/工作/" style="font-size: 10px;">工作</a>
+						<a href="/tags/Interview/" style="font-size: 15px;">Interview</a> <a href="/tags/Life/" style="font-size: 20px;">Life</a> <a href="/tags/development/" style="font-size: 10px;">development</a> <a href="/tags/iOS/" style="font-size: 15px;">iOS</a> <a href="/tags/工作/" style="font-size: 10px;">工作</a>
 					</div>
 				</section>
 				
@@ -179,6 +179,63 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-隐藏UITabBarController子Controller的TabBar" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/01/27/隐藏UITabBarController子Controller的TabBar/" class="article-date">
+  	<time datetime="2016-01-27T07:55:40.000Z" itemprop="datePublished">2016-01-27</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/01/27/隐藏UITabBarController子Controller的TabBar/">隐藏UITabBarController子Controller的TabBar</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&emsp;&emsp;以为直接在SB中勾上”hide bottom bar on push”就能隐藏tab bar…的确是能隐藏，但是仍然是placeHolder占据了空间…<br>&emsp;&emsp;花费了一段时间，才发觉是autoLayout的约束设置不正确.在 <a href="http://stackoverflow.com/questions/28724255/auto-layout-and-hide-bottom-bar-when-pushed" target="_blank" rel="external">http://stackoverflow.com/questions/28724255/auto-layout-and-hide-bottom-bar-when-pushed</a> 找到了正确的设置方式.<br>&emsp;&emsp;还有一个大坑!”hide bottom bar on push”要和”under bottom bars”搭配食用！<br><img src="http://7xq2i8.com1.z0.glb.clouddn.com/Blog1.png" alt="坑"></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-为Label中的关键字添加链接" class="article article-type-post" itemscope itemprop="blogPost">
   
