@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>隐藏UITabBarController子Controller的TabBar | Wryan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="&amp;emsp;&amp;emsp;以为直接在SB中勾上”hide bottom bar on push”就能隐藏tab bar…的确是能隐藏，但是仍然是placeHolder占据了空间…&amp;emsp;&amp;emsp;花费了一段时间，才发觉是autoLayout的约束设置不正确.在 http://stackoverflow.com/questions/28724255/auto-layout-and-hide-bo">
+<meta name="keywords" content="iOS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="隐藏UITabBarController子Controller的TabBar">
 <meta property="og:url" content="http://yoursite.com/2016/01/27/隐藏UITabBarController子Controller的TabBar/index.html">
 <meta property="og:site_name" content="Wryan">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;以为直接在SB中勾上”hide bottom bar on push”就能隐藏tab bar…的确是能隐藏，但是仍然是placeHolder占据了空间…&amp;emsp;&amp;emsp;花费了一段时间，才发觉是autoLayout的约束设置不正确.在 http://stackoverflow.com/questions/28724255/auto-layout-and-hide-bo">
+<meta property="og:locale" content="default">
 <meta property="og:image" content="http://7xq2i8.com1.z0.glb.clouddn.com/Blog1.png">
 <meta property="og:updated_time" content="2016-01-27T08:09:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="隐藏UITabBarController子Controller的TabBar">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;以为直接在SB中勾上”hide bottom bar on push”就能隐藏tab bar…的确是能隐藏，但是仍然是placeHolder占据了空间…&amp;emsp;&amp;emsp;花费了一段时间，才发觉是autoLayout的约束设置不正确.在 http://stackoverflow.com/questions/28724255/auto-layout-and-hide-bo">
+<meta name="twitter:image" content="http://7xq2i8.com1.z0.glb.clouddn.com/Blog1.png">
   
     <link rel="alternative" href="/atom.xml" title="Wryan" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
-
+</html>
 <body>
   <div id="container">
     <div class="left-col">
@@ -75,13 +78,13 @@
 				<div class="tips-box hide">
 					<div class="tips-arrow"></div>
 					<ul class="tips-inner">
-						<li>菜单</li>
-						<li>標籤</li>
+						<li>Menu</li>
+						<li>Tags</li>
 						
-						<li>友情链接</li>
+						<li>Links</li>
 						
 						
-						<li>關於</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -180,7 +183,7 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-隐藏UITabBarController子Controller的TabBar" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-隐藏UITabBarController子Controller的TabBar" class="article article-type-post" itemscope="" itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/01/27/隐藏UITabBarController子Controller的TabBar/" class="article-date">
@@ -190,7 +193,7 @@
   
   <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
+      <input type="hidden" class="isFancy">
     
     
       <header class="article-header">
@@ -217,7 +220,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&emsp;&emsp;以为直接在SB中勾上”hide bottom bar on push”就能隐藏tab bar…的确是能隐藏，但是仍然是placeHolder占据了空间…<br>&emsp;&emsp;花费了一段时间，才发觉是autoLayout的约束设置不正确.在 <a href="http://stackoverflow.com/questions/28724255/auto-layout-and-hide-bottom-bar-when-pushed" target="_blank" rel="external">http://stackoverflow.com/questions/28724255/auto-layout-and-hide-bottom-bar-when-pushed</a> 找到了正确的设置方式.<br>&emsp;&emsp;还有一个大坑!”hide bottom bar on push”要和”under bottom bars”搭配食用！<br><img src="http://7xq2i8.com1.z0.glb.clouddn.com/Blog1.png" alt="坑"></p>
+        <p>&emsp;&emsp;以为直接在SB中勾上”hide bottom bar on push”就能隐藏tab bar…的确是能隐藏，但是仍然是placeHolder占据了空间…<br>&emsp;&emsp;花费了一段时间，才发觉是autoLayout的约束设置不正确.在 <a href="http://stackoverflow.com/questions/28724255/auto-layout-and-hide-bottom-bar-when-pushed" target="_blank" rel="noopener">http://stackoverflow.com/questions/28724255/auto-layout-and-hide-bottom-bar-when-pushed</a> 找到了正确的设置方式.<br>&emsp;&emsp;还有一个大坑!”hide bottom bar on push”要和”under bottom bars”搭配食用！<br><img src="http://7xq2i8.com1.z0.glb.clouddn.com/Blog1.png" alt="坑"></p>
 
       
     </div>
@@ -279,7 +282,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2017 WayYoung
+    		&copy; 2018 WayYoung
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -293,7 +296,7 @@
 
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -309,8 +312,8 @@
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 
